@@ -105,9 +105,8 @@ function init() {
 }
 
 function resize() {
-
-	cv.height = window.innerHeight;
-	cv.width = cv.height * ratio; 
+	cv.width = Math.min(window.innerWidth, window.innerHeight * ratio);
+	cv.height = cv.width / ratio;
 	
 	// set the scale (fixed ratio)
 	scale = cv.width / Constants.W;
