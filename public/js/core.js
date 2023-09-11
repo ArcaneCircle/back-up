@@ -1,13 +1,13 @@
 // all images used
-var sources = [	"a/font.png",
-				"a/bar_base.png",
-				"a/p2.png",
-				"a/leaf.png",
-				"a/plat.png",
-				"a/spr2.png",
-				"a/w.png",
-				"a/shade.png",
-				"a/ray.png"];
+var sources = [	"../img/font.png",
+				"../img/bar_base.png",
+				"../img/p2.png",
+				"../img/leaf.png",
+				"../img/plat.png",
+				"../img/spr2.png",
+				"../img/w.png",
+				"../img/shade.png",
+				"../img/ray.png"];
 
 // storage for all images
 var im = {};
@@ -45,7 +45,7 @@ var buttons = [];
 var target = this;
 
 // run init on load
-window.onload = init;
+window.onload = () => window.highscores.init("Get Back Up").then(init);
 window.addEventListener('resize', resize, false);
 
 var hiscore = 0;
@@ -62,7 +62,8 @@ var bg = null;
 /* Initialisation */
 
 function init() {
-	
+	hiscore = window.highscores.getScore();
+
 	window.AudioContext = window.AudioContext || window.webkitAudioContext;
 
 	if (window.AudioContext) audioCtx = new window.AudioContext();
@@ -116,7 +117,7 @@ function print(px, py, text, center, s) {
 	
 	var i = -1;
 	var len = text.length;
-	var image = im["a/font.png"];
+	var image = im["../img/font.png"];
 	
 	var size = s || 1;
 
@@ -244,7 +245,7 @@ function startGame(players) {
 }
 
 function quitGame() {
-	
+	window.highscores.setScore(hiscore);
 	transFunc = onTransQuit;
 	trans.start();
 }

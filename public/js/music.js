@@ -43,8 +43,8 @@ var Music = function() {
     this.jumpSFX = null;
     this.jumpInt = null;
 
-    this.load("a/trumpet.mp3", 0);
-    this.load("a/hat.mp3", 1);
+    this.load("../img/trumpet.mp3", 0);
+    this.load("../img/hat.mp3", 1);
 }
 
 Music.prototype = {

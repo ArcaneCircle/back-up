@@ -13,7 +13,7 @@ var Player = function(px, py) {
 	// scale
 	this.sx = this.sy = 1;
 	
-	this.img = im["a/p2.png"];
+	this.img = im["../img/p2.png"];
 	
 	this.isAlive = true;
 	this.v = true;

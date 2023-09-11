@@ -21,8 +21,8 @@ var Wall = function(shade) {
 	this.as = 1;
 	if (rnd() < 0.3) this.as = 0;
 
-	this.ft = im["a/w.png"];
-	this.sd = im["a/shade.png"];
+	this.ft = im["../img/w.png"];
+	this.sd = im["../img/shade.png"];
 }
 
 Wall.prototype = {

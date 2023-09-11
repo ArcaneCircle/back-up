@@ -12,7 +12,7 @@ var Platform = function(img) {
 
 	this.img = im[img];
 	
-	this.spr = im["a/spr2.png"];
+	this.spr = im["../img/spr2.png"];
     
     this.v = true;
 

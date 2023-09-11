@@ -1,14 +1,13 @@
-*.bat
+# Logs
+pnpm-debug.log*
+.pnpm-debug.log
 
-# MacOS
+node_modules
+dist
+dist-xdc
+
+# Editor directories and files
+.vscode/*
+.idea
 .DS_Store
-.AppleDouble
-.LSOverride
-
-# Windows
-Thumbs.db
-Thumbs.db:encryptable
-ehthumbs.db
-ehthumbs_vista.db
-[Dd]esktop.ini
-
+*~
