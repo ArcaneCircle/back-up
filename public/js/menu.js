@@ -97,7 +97,7 @@ Menu.prototype = {
 				
 				if (map[i][j] == 1 || map[i][j] == 3) {
 					
-					var p = new Platform("../img/plat.png");
+					var p = new Platform("../assets/plat.png");
 					this.lev.push(p);
 					
 					p.a = a;	

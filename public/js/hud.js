@@ -6,8 +6,8 @@ var HUD = function() {
 	this.btn = new Button(Constants.W - 74, 10, "<");
 	
 	// charge bar
-	this.bar = im["../img/bar.png"];
-	this.bBs = im["../img/bar_base.png"];
+	this.bar = im["../assets/bar.png"];
+	this.bBs = im["../assets/bar_base.png"];
 	this.bS = 0;
 
 	this.help = true;

@@ -1,13 +1,13 @@
 // all images used
-var sources = [	"../img/font.png",
-				"../img/bar_base.png",
-				"../img/p2.png",
-				"../img/leaf.png",
-				"../img/plat.png",
-				"../img/spr2.png",
-				"../img/w.png",
-				"../img/shade.png",
-				"../img/ray.png"];
+var sources = [	"../assets/font.png",
+				"../assets/bar_base.png",
+				"../assets/p2.png",
+				"../assets/leaf.png",
+				"../assets/plat.png",
+				"../assets/spr2.png",
+				"../assets/w.png",
+				"../assets/shade.png",
+				"../assets/ray.png"];
 
 // storage for all images
 var im = {};
@@ -116,7 +116,7 @@ function print(px, py, text, center, s) {
 	
 	var i = -1;
 	var len = text.length;
-	var image = im["../img/font.png"];
+	var image = im["../assets/font.png"];
 	
 	var size = s || 1;
 
