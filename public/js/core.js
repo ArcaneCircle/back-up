@@ -45,7 +45,7 @@ var buttons = [];
 var target = this;
 
 // run init on load
-window.onload = () => window.highscores.init("Get Back Up").then(init);
+window.onload = () => window.highscores.init().then(init);
 window.addEventListener('resize', resize, false);
 
 var hiscore = 0;
